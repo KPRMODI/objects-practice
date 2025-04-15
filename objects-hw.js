@@ -155,9 +155,9 @@ function problem6() {
 
   // This will output to the page for you:
   // Just fill in the PLACEHOLDERs with the correct info.
-  let result = `<strong>Playlist: PLACEHOLDER </strong><ul>`;
-  for (let song of PLACEHOLDER) {
-    result += `<li>${PLACEHOLDER}</li>`;
+  let result = `<strong>Playlist: ${playlist.name} </strong><ul>`;
+  for (let song of playlist.songList) {
+    result += `<li>${song}</li>`;
   }
   result += "</ul>";
   outputDiv.innerHTML = result;
